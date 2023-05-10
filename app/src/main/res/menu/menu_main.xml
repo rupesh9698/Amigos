@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="AlwaysShowAction">
+
+    <item
+        android:id="@+id/action_add_post"
+        android:icon="@drawable/ic_add_white"
+        android:title="@string/add_post"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_create_group"
+        android:icon="@drawable/ic_creategroup_white"
+        android:title="@string/create_group"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_add_participant"
+        android:icon="@drawable/ic_addperson_white"
+        android:title="@string/add_group_participant"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_groupinfo"
+        android:icon="@drawable/ic_info_white"
+        android:title="@string/group_info"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_menu_search"
+        android:title="@string/search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_notifications"
+        android:icon="@drawable/ic_notification_white"
+        android:title="@string/notifications"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_settings_white"
+        android:title="@string/settings"
+        app:showAsAction="always" />
+
+</menu>

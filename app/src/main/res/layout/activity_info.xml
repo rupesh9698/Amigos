@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/softbackground"
+    android:orientation="vertical"
+    android:padding="18dp"
+    tools:context=".InfoActivity"
+    tools:ignore="Overdraw">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/personal_information"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/blue_border_rounded_corner">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/setupFullNameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="@string/full_name"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:paddingStart="17dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="17dp"
+            android:paddingBottom="15dp"
+            android:textColor="@android:color/black"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/blue_border_rounded_corner">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/setupPhoneEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="@string/phone_number"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:paddingStart="17dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="17dp"
+            android:paddingBottom="15dp"
+            android:textColor="@android:color/black"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/setupRegisterBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/gradient"
+        android:text="@string/save"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
