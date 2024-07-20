@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/softbackground"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".SettingsActivity"
+    tools:ignore="Overdraw">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/action_developer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/gradient"
+        android:text="@string/developer"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/action_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/gradient"
+        android:text="@string/logout"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

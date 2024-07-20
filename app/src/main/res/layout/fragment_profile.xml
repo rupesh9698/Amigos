@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/softbackground"
+    tools:context=".fragments.ProfileFragment"
+    tools:ignore="Overdraw">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/coverIv"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#77000000"
+                android:scaleType="fitXY">
+
+            </androidx.appcompat.widget.AppCompatImageView>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginTop="120dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/avatarIv"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginStart="20dp"
+                    android:background="#77000000"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_default_img_white" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#77000000"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/nameTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="8dp"
+                        android:maxLines="1"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="8dp"
+                            android:maxLines="1"
+                            android:text="@string/phone_"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="16sp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/phoneTv"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:maxLines="1"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="16sp" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="8dp"
+                            android:maxLines="1"
+                            android:text="@string/email_"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="12sp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/emailTv"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:maxLines="1"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="12sp" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearLayout"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview_posts"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_edit_white"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

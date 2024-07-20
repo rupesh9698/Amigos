@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/softbackground"
+    tools:context=".ThereProfileActivity"
+    tools:ignore="Overdraw">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/coverIv"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#77000000"
+            android:scaleType="fitXY">
+
+        </androidx.appcompat.widget.AppCompatImageView>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="120dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/avatarIv"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="35dp"
+                android:background="#77000000"
+                android:padding="5dp"
+                android:src="@drawable/ic_default_img_white" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="228dp"
+                android:layout_height="wrap_content"
+                android:background="#77000000"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/nameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/emailTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/phoneTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="22sp"
+                    android:visibility="gone" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sendFriendRequestBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout"
+            android:layout_gravity="end"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/gradient"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_posts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/sendFriendRequestBtn"
+            android:layout_marginTop="25dp" />
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

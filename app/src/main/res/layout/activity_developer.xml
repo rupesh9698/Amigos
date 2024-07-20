@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/softbackground"
+    android:padding="20dp"
+    tools:context=".DeveloperActivity"
+    tools:ignore="Overdraw">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+            android:id="@+id/developer"
+            android:layout_width="match_parent"
+            android:layout_height="170pt"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/developer" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="@string/pinch_to_zoom" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/rupesh_bagde"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/android_application_developer"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/instagram"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/instagram"
+                android:gravity="center" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/facebook"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/facebook"
+                android:gravity="center" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/twitter"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/twitter"
+                android:gravity="center" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

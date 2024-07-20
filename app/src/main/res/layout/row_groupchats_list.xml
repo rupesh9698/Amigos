@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    app:cardBackgroundColor="@color/soft"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/groupIconIv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_group_primary"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/groupTitleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/groupIconIv"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/groupTitleTv"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/groupIconIv"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/messageTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/groupTitleTv"
+            android:layout_toEndOf="@+id/nameTv"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/timeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameTv"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:maxLines="1"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
