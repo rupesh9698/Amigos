@@ -5,6 +5,7 @@
         <item name="colorPrimary">#00B0FF</item>
         <item name="colorPrimaryDark">#0036FF</item>
         <item name="colorAccent">#E91E63</item>
+        <item name="android:windowLightStatusBar">true</item>
 
     </style>
 
@@ -13,6 +14,7 @@
         <item name="colorPrimary">#00B0FF</item>
         <item name="colorPrimaryDark">#0036FF</item>
         <item name="colorAccent">#E91E63</item>
+        <item name="android:windowLightStatusBar">true</item>
 
     </style>
 

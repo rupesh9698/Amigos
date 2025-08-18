@@ -13,12 +13,12 @@ android {
             keyPassword 'Rupesh5727'
         }
     }
-    compileSdk 35
+    compileSdk 36
 
     defaultConfig {
         applicationId "com.social.amigos"
         minSdk 26
-        targetSdk 35
+        targetSdk 36
         versionCode 3
         versionName "1.6"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -32,42 +32,43 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_21
+        targetCompatibility JavaVersion.VERSION_21
     }
 
-    buildToolsVersion '35.0.0'
+    buildToolsVersion '36.0.0'
     namespace 'com.social.amigos'
+    ndkVersion '29.0.13113456 rc1'
 }
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
-    implementation platform('com.google.firebase:firebase-bom:33.1.2')
+    implementation platform('com.google.firebase:firebase-bom:33.14.0')
 
     implementation 'androidx.appcompat:appcompat:1.7.0'
     implementation "androidx.cardview:cardview:1.0.0"
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'androidx.recyclerview:recyclerview:1.4.0'
     implementation 'com.android.volley:volley:1.2.1'
     implementation 'com.davemorrissey.labs:subsampling-scale-image-view-androidx:3.10.0'
     implementation 'com.google.android.material:material:1.12.0'
-    implementation 'com.google.android.play:core:1.10.3'
-    implementation 'com.google.code.gson:gson:2.11.0'
-    implementation 'com.google.firebase:firebase-analytics:22.0.2'
-    implementation 'com.google.firebase:firebase-auth:23.0.0'
+    implementation 'com.google.code.gson:gson:2.13.1'
+    implementation 'com.google.firebase:firebase-analytics:22.4.0'
+    implementation 'com.google.firebase:firebase-auth:23.2.1'
     implementation 'com.google.firebase:firebase-core:21.1.1'
     implementation 'com.google.firebase:firebase-database:21.0.0'
-    implementation 'com.google.firebase:firebase-firestore:25.0.0'
-    implementation 'com.google.firebase:firebase-messaging:24.0.0'
-    implementation 'com.google.firebase:firebase-storage:21.0.0'
+    implementation 'com.google.firebase:firebase-firestore:25.1.4'
+    implementation 'com.google.firebase:firebase-messaging:24.1.1'
+    implementation 'com.google.firebase:firebase-storage:21.0.2'
     implementation 'com.jakewharton.timber:timber:5.0.1'
     implementation 'com.scottyab:aescrypt:0.0.1'
     implementation 'com.squareup.picasso:picasso:2.71828'
-    implementation 'com.squareup.retrofit2:converter-gson:2.11.0'
-    implementation 'com.squareup.retrofit2:converter-scalars:2.11.0'
-    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:3.0.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:3.0.0'
+    implementation 'com.squareup.retrofit2:retrofit:3.0.0'
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.google.android.play:app-update:2.1.0'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.2.1'

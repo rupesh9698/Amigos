@@ -6,6 +6,7 @@
     android:background="@drawable/softbackground"
     android:orientation="vertical"
     android:padding="18dp"
+    android:fitsSystemWindows="true"
     tools:context=".InfoActivity"
     tools:ignore="Overdraw">
 
